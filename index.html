@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Javascript 01</title>
+        <script>
+            alert("olá galera!");
+
+            function trocarFrase() {
+                var fraseAtual = document.getElementById("frase");
+                fraseAtual.innerHTML = "Funcionou, a frase mudou!";
+            }
+            function Original() {
+                var fraseAtual = document.getElementById("frase2");
+                fraseAtual.innerHTML = "Olá mundo!"
+            }
+            function trocarFrase () {
+                var fraseAtual = document.getElementById("frase");
+                fraseAtual.innerHTML = "Funcionou, a frase mudou!";
+                fraseAtual.style.color ="red";
+                fraseAtual.style.fontSize="25px";
+                frase.Atual.style.backgroundColor ="yellow";
+                //altera  fundo da página
+                document.body.style.backgroundColor = "blue";
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="frase" onmouseover="trocarFrase()"
+        ondblclick="Original()">Olá mundo!</h1>
+    </body>
+</html>
