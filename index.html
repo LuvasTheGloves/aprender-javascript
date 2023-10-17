@@ -2,29 +2,22 @@
     <head>
         <title>Javascript 01</title>
         <script>
-            alert("olá galera!");
+            //exibe uma janela
+            alert("olá galera!")
 
-            function trocarFrase() {
-                var fraseAtual = document.getElementById("frase");
-                fraseAtual.innerHTML = "Funcionou, a frase mudou!";
-            }
-            function Original() {
-                var fraseAtual = document.getElementById("frase2");
-                fraseAtual.innerHTML = "Olá mundo!"
-            }
-            function trocarFrase () {
-                var fraseAtual = document.getElementById("frase");
-                fraseAtual.innerHTML = "Funcionou, a frase mudou!";
-                fraseAtual.style.color ="red";
-                fraseAtual.style.fontSize="25px";
-                frase.Atual.style.backgroundColor ="yellow";
-                //altera  fundo da página
+            function mudarFrase() {
+                var elemento = document.getElementById("frase")
+                elemento.innerHTML = "Qualquer frase"
+                elemento.style.color = "red";
+                elemento.style.fontSize = "25px";
+                elemento.style.backgroundColor = "yellow";
+                //altera o fundo da página
                 document.body.style.backgroundColor = "blue";
+                elemento.innerHTML = "<img src=\'img/sans.png\' />"
             }
         </script>
     </head>
     <body>
-        <h1 id="frase" onmouseover="trocarFrase()"
-        ondblclick="Original()">Olá mundo!</h1>
+        <h1 ondblclick="mudarFrase()" id="frase">Olá Mundo!</h1>
     </body>
 </html>
