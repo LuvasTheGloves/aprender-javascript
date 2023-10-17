@@ -1,21 +1,8 @@
 <html>
     <head>
         <title>Javascript 01</title>
-        <script>
-            //exibe uma janela
-            alert("olá galera!")
-
-            function mudarFrase() {
-                var elemento = document.getElementById("frase")
-                elemento.innerHTML = "Qualquer frase"
-                elemento.style.color = "red";
-                elemento.style.fontSize = "25px";
-                elemento.style.backgroundColor = "yellow";
-                //altera o fundo da página
-                document.body.style.backgroundColor = "blue";
-                elemento.innerHTML = "<img src=\'img/sans.png\' />"
-            }
-        </script>
+        <script src="js/myscript.js"></script>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <h1 ondblclick="mudarFrase()" id="frase">Olá Mundo!</h1>
