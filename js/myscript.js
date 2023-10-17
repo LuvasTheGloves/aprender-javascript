@@ -13,3 +13,8 @@ function mudarFrase() {
     document.body.style.backgroundColor = "blue";
     elemento.innerHTML = "<img src=\'img/sans.png\' />"
 }
+
+function trocarClasse(){
+    var fraseatual = document.getElementById("frase");
+    fraseatual.className = "h1_2";
+}
