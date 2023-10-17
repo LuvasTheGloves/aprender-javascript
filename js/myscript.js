@@ -14,7 +14,7 @@ function mudarFrase() {
     elemento.innerHTML = "<img src=\'img/sans.png\' />"
 }
 
-function trocarClasse(){
+function trocarClasse() {
     var fraseatual = document.getElementById("frase");
     fraseatual.className = "h1_2";
 }
