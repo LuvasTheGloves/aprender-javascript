@@ -45,10 +45,10 @@ function subtrair() {
     let campoN2 = document.getElementById("n2")
     let valorN2 = parseInt(campoN2.value)
 
-    let resultadoDaSubtraçao = valorN1 - valorN2
+    let resultadoDaSub = valorN1 - valorN2
     
     let campoResultado = document.getElementById("resultado")
-    campoResultado.Value = resultadoDaSoma
+    campoResultado.Value = resultadoDaSub
 }
 
 function multiplicar() {
@@ -58,10 +58,10 @@ function multiplicar() {
     let campoN2 = document.getElementById("n2")
     let valorN2 = parseInt(campoN2.value)
 
-    let resultadoMultplicaçao = valorN1 * valorN2
+    let resultadoDaMulti = valorN1 * valorN2
     
     let campoResultado = document.getElementById("resultado")
-    campoResultado.Value = resultadoDaSoma
+    campoResultado.Value = resultadoDaMulti
 }
 
 function dividir() {
@@ -71,10 +71,10 @@ function dividir() {
     let campoN2 = document.getElementById("n2")
     let valorN2 = parseInt(campoN2.value)
 
-    let resultadoDaDivisao = valorN1 / valorN2
+    let resultadoDaDivi = valorN1 / valorN2
     
     let campoResultado = document.getElementById("resultado")
-    campoResultado.Value = resultadoDaSoma
+    campoResultado.Value = resultadoDaDivi
 }
 
 
