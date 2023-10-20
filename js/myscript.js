@@ -35,7 +35,7 @@ function somar() {
     let resultadoDaSoma = valorN1 + valorN2
     
     let campoResultado = document.getElementById("resultado")
-    campoResultado.Value = resultadoDaSoma
+    campoResultado.value = resultadoDaSoma
 }
 
 function subtrair() {
@@ -48,7 +48,7 @@ function subtrair() {
     let resultadoDaSub = valorN1 - valorN2
     
     let campoResultado = document.getElementById("resultado")
-    campoResultado.Value = resultadoDaSub
+    campoResultado.value = resultadoDaSub
 }
 
 function multiplicar() {
@@ -61,7 +61,7 @@ function multiplicar() {
     let resultadoDaMulti = valorN1 * valorN2
     
     let campoResultado = document.getElementById("resultado")
-    campoResultado.Value = resultadoDaMulti
+    campoResultado.value = resultadoDaMulti
 }
 
 function dividir() {
@@ -74,7 +74,7 @@ function dividir() {
     let resultadoDaDivi = valorN1 / valorN2
     
     let campoResultado = document.getElementById("resultado")
-    campoResultado.Value = resultadoDaDivi
+    campoResultado.value = resultadoDaDivi
 }
 
 
