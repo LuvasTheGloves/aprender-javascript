@@ -1,16 +1,76 @@
 <html>
-    <head>
-        <script src="js/myscript.js" type="text/javascript"></script>
-    </head>
-    <body>
-        <h1>Página da minha Calculadora</h1>
-        <input type="number" placeholder="123" id="n1">
-        <input type="number" placeholder="123" id="n2">
-        =
-        <input type="number" readonly id="resultado"><br><br>
-        <button onclick="somar();">+</button>
-        <button onclick="subtrair();">-</button>
-        <button onclick="multiplicar();">*</button>
-        <button onclick="dividir();">/</button>
-    </body>
-    </html>
+
+<head>
+    <script>
+        // aqui vai o código JavaScript //
+
+        // exibe uma janela //
+        alert("olá galera!")
+
+        function somar() {
+            let campoN1 = document.getElementById("n1")
+            let valorN1 = parseInt(campoN1.value)
+
+            let campoN2 = document.getElementById("n2")
+            let valorN2 = parseInt(campoN2.value)
+
+            let resultadoDaSoma = valorN1 + valorN2
+
+            let campoResultado = document.getElementById("resultado")
+            campoResultado.value = resultadoDaSoma
+        }
+
+        function subtrair() {
+            let campoN1 = document.getElementById("n1")
+            let valorN1 = parseInt(campoN1.value)
+
+            let campoN2 = document.getElementById("n2")
+            let valorN2 = parseInt(campoN2.value)
+
+            let resultadoDaSub = valorN1 - valorN2
+
+            let campoResultado = document.getElementById("resultado")
+            campoResultado.value = resultadoDaSub
+        }
+
+        function multiplicar() {
+            let campoN1 = document.getElementById("n1")
+            let valorN1 = parseInt(campoN1.value)
+
+            let campoN2 = document.getElementById("n2")
+            let valorN2 = parseInt(campoN2.value)
+
+            let resultadoDaMulti = valorN1 * valorN2
+
+            let campoResultado = document.getElementById("resultado")
+            campoResultado.value = resultadoDaMulti
+        }
+
+        function dividir() {
+            let campoN1 = document.getElementById("n1")
+            let valorN1 = parseInt(campoN1.value)
+
+            let campoN2 = document.getElementById("n2")
+            let valorN2 = parseInt(campoN2.value)
+
+            let resultadoDaDivi = valorN1 / valorN2
+
+            let campoResultado = document.getElementById("resultado")
+            campoResultado.value = resultadoDaDivi
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Página da minha Calculadora</h1>
+    <input type="number" placeholder="123" id="n1">
+    <input type="number" placeholder="123" id="n2">
+    =
+    <input type="number" readonly id="resultado"><br><br>
+    <button onclick="somar();">+</button>
+    <button onclick="subtrair();">-</button>
+    <button onclick="multiplicar();">*</button>
+    <button onclick="dividir();">/</button>
+</body>
+
+</html>

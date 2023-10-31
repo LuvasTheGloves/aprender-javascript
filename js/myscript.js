@@ -1,8 +1,3 @@
-// aqui vai o código JavaScript //
-
-// exibe uma janela //
-alert("olá galera!")
-
 function mudarFrase() {
     var elemento = document.getElementById("frase")
     elemento.innerHTML = "Qualquer frase"
@@ -24,57 +19,3 @@ function trocarTexto() {
     var elementoNovo = document.getElementById("novaFrase").value
     elemento.innerHTML = elementoNovo
 }
-
-function somar() {
-    let campoN1 = document.getElementById("n1")
-    let valorN1 = parseInt(campoN1.value)
-
-    let campoN2 = document.getElementById("n2")
-    let valorN2 = parseInt(campoN2.value)
-
-    let resultadoDaSoma = valorN1 + valorN2
-    
-    let campoResultado = document.getElementById("resultado")
-    campoResultado.value = resultadoDaSoma
-}
-
-function subtrair() {
-    let campoN1 = document.getElementById("n1")
-    let valorN1 = parseInt(campoN1.value)
-
-    let campoN2 = document.getElementById("n2")
-    let valorN2 = parseInt(campoN2.value)
-
-    let resultadoDaSub = valorN1 - valorN2
-    
-    let campoResultado = document.getElementById("resultado")
-    campoResultado.value = resultadoDaSub
-}
-
-function multiplicar() {
-    let campoN1 = document.getElementById("n1")
-    let valorN1 = parseInt(campoN1.value)
-
-    let campoN2 = document.getElementById("n2")
-    let valorN2 = parseInt(campoN2.value)
-
-    let resultadoDaMulti = valorN1 * valorN2
-    
-    let campoResultado = document.getElementById("resultado")
-    campoResultado.value = resultadoDaMulti
-}
-
-function dividir() {
-    let campoN1 = document.getElementById("n1")
-    let valorN1 = parseInt(campoN1.value)
-
-    let campoN2 = document.getElementById("n2")
-    let valorN2 = parseInt(campoN2.value)
-
-    let resultadoDaDivi = valorN1 / valorN2
-    
-    let campoResultado = document.getElementById("resultado")
-    campoResultado.value = resultadoDaDivi
-}
-
-
