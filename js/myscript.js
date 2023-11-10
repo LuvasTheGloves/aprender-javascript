@@ -19,3 +19,7 @@ function trocarTexto() {
     var elementoNovo = document.getElementById("novaFrase").value
     elemento.innerHTML = elementoNovo
 }
+
+function gebi(id) {
+    return document.getElementById(id)
+}
