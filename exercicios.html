@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamo quere treina JS?</title>
+    <script src="js/myscript.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #botao{
+            background-color: greenyellow;
+        }
+    </style>
+    <script>
+        function contar(){
+            var medias = [];
+            var m1 = prompt("Diga a média do primeiro trimestre")
+            var m2 = prompt("Diga a média do segundo trimestre")
+
+            medias[0] = m1;   //OU: medias.push(m1)
+            medias [1] = m2; //medias.push(m2)
+
+            var somatoria = 0.0;
+            for (var i = 0; i <medias.length; i++){
+                var nota = medias[i];
+                somatoria = somatoria + parseFloat(nota);
+            }
+
+            var m3 = 18.0 - somatoria;
+            if (m3 < 10.0){
+                alert("você precisa alcançar " + m3);
+            } else {
+                alert("Não deu. Precisaria de " + m3 + ". Está reprovado!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" id="botao" value="Calcular média" onclick="contar()">
+</body>
+</html>

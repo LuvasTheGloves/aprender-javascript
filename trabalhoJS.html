@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/myscript.js" type="text/javascript"></script>
+    <script>
+        function validar() {
+            var nome = gebi("idNome").value
+            var email = gebi("idEmail").value
+            var cpf = gebi("idCpf").value
+            var telefone = gebi("idTelefone").value
+            var cep = gebi("idCep").value
+
+            if(nome.length === 0){
+                alert("Preencha o campo nome!")
+            } else
+                if((nome != "a")){
+                    alert("O campo nome está incorreto!")
+                }
+            return
+
+            if(email.length === 0){
+                alert("Preencha o campo email!")
+            } else
+                if((email != "a")){
+                    alert("O campo email está incorreto!")
+                }
+            return
+
+            if(cpf.length === 0){
+                alert("Preencha o campo cpf!")
+            } else
+                if((cpf != "a")){
+                    alert("O campo cpf está incorreto!")
+                }
+            return
+
+            if(telefone.length === 0){
+                alert("Preencha o telefone nome!")
+            } else
+                if((telefone != "a")){
+                    alert("O campo telefone está incorreto!")
+                }
+            return
+            
+            if(cep.length === 0){
+                alert("Preencha o cep nome!")
+            } else
+                if((cep != "")){
+                    alert("O campo cep está incorreto!")
+                }
+            return
+                
+            alert("Sucesso!")
+            gebi("formTrabalho").submit()
+
+            gebi("email").style.borderColor ="red";
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="formTrabalho" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        <center>
+            <fieldset style="width:230px">
+                <legend>Validação</legend>
+                <input type="text" id="idNome" name="nome" placeholder="Fulano">
+                <input type="email" id="idEmail" name="email" placeholder="fulano@nada.com">
+                <input type="number" id="idCpf" name="cpf" placeholder="">
+                <input type="number" id="idTelefone" name="telefone" placeholder="+00 00 0000-0000">
+                <input type="number" id="idCep" name="cep" placeholder="">
+                <input type="button" value="Enviar" onclick="validar();">
+            </fieldset>
+        </center>
+    </form>
+</body>
+
+</html>

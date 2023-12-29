@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/myscript.js" type="text/javascript"></script>
+    <script>
+        function validarEmail() {
+            var email = document.getElementById("idEmail").value
+            if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+                alert("Email inválido")
+                return
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background-color: rgb(188, 255, 255);
+        }
+        #idEmail {
+            margin-left: 800px;
+            text-align: center;
+        }
+        #idNome {
+            margin-left: 800px;
+            text-align: center;
+        }
+        textarea {
+            margin-left: 800px;
+            text-align: center;
+        }
+        #enviar {
+            margin-left: 800px;
+            text-align: center;
+        }
+
+    </style>
+    <title>Email</title>
+</head>
+<body>
+    Está com dúvidas? <a href="mailto:email@provedor.com.br?
+        &subject=Assunto do email
+        &cc=copia@provedor.com.br
+        &bcc=copiaoculta@provedor.com.br
+        &body=Olá galera!">Enviar email
+    </a>
+    <br>
+    <br>
+    Nos contate no WhatsApp: <a href="https://wa.me/548999999999?
+    text=mensagem%20de%20hoje">WhatsApp
+    </a>
+    <br>
+    <br>
+    <br>
+    <form id="idForm" action="https://app.headlessforms.cloud/api/v1/form-submission/UF7YAmmfN8" method="POST">
+        E-mail: <input placeholder="fulano@nada.com" title="Insira um e-mail válido." type="email" onblur="validrEmail" name="email" id="idEmail" required>
+        <br>
+        <br>
+        Nome: <input placeholder="Fulano Nada" title="Insira um e-mail válido." type="text" name="nome" id="idNome" required>
+        <br>
+        <br>
+        <textarea pattern="[a-z]{5,12}" rows="7" cols="33" name="corpo" placeholder="O texto do seu e-mail." title="SHADOW O OURIÇO...." required></textarea><br>
+        <input type="submit" id="enviar" value="Enviar"/>
+        <input type="text" title="Sigla do estado" placeholder="SC" pattern="[A-Z]{2,2}" pattern="regex" minlength="2" maxlength="2" required>
+    </form>
+</body>
+</html>

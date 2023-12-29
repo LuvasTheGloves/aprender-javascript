@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/myscript.js" type="text/javascript"></script>
+    <script>
+        function contar() {
+            for (var a=0; a<6; a++){
+            document.write(a + "<br>")
+            }
+        }
+        function contarExtra() {
+            var soma = 0
+            for (var ex=0; ex<100; ex++) {
+            document.write(ex + " " + soma + "<br>")
+            soma = soma + ex //ou "soma += ex"
+            }
+            document.write("soma final " + soma + "<br>")
+        }
+        function contar2(){
+            for (var b=10; b>-1; b--){
+                document.write(b + "<br>")
+            }
+        }
+        function contar3(){
+            for (var c=0; c<21; c=c+2){
+                document.write(c + "<br>")
+            }
+        }
+        function contar4(){
+            for (var d=1; d<21; d=d+2){
+                document.write(d + "<br>")
+            }
+        }
+        function contar5(){
+            for (var e=0; e<100; e=e/5){ //ta crashando o chrome kkkkk
+                document.write(e + "<br>")
+            }
+        }
+        function contarEnquanto(){
+            var n = 1;
+
+            while (n<=10){
+                document.write(n);
+                document.write('<br>');
+                n = n + 1; //tirar essa linha vai dar loop infinito ksksksks
+            }
+        }
+        function contarEnquanto2(){
+            var n = 10
+            while (n>=1){
+            document.write(n)
+            document.write('<br>')
+            n = n - 1
+            }
+        }
+        function contarEnquanto3(){
+            var n = 0
+            while (n<=50){
+                document.write(n)
+                document.write('<br>')
+                n = n + 5
+            }
+        }
+        function contarEnquanto4(){ // ------------ INCOMPLETO ------------ //
+            var n = 1
+            while (n<=20){
+                document.write(n)
+                document.write('<br>')
+                n = n + 1
+            }
+        }
+        function contarEnquanto5(){
+            var n = 0
+            while (n<=25){
+                document.write(n)
+                document.write('<br>')
+                n = n + 2
+            }
+        }
+        function contarEnquanto6(){
+            var n = prompt("Diga um número");
+            while(n != 10){
+                n = prompt("Errou! Diga outro número!");
+            }
+            alert("Acertou, miserável!")
+        }
+        function contarEnquanto7(){
+            var soma = 0
+            var n = 0
+            while (n < 21) {
+                document.write(n)
+                document.write('<br>')
+                if( (soma + n) > 101){
+                    break // para o looping
+                } else {
+                    soma = soma + n
+                }
+                n = n + 1
+            }
+        }
+        function arranjos(){
+            var numeros=[9, 21, 7, 15]
+            var cars=["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi", "abobrinha"];
+            document.write(numeros)
+            document.write("<br>")
+            document.write(cars)
+
+            console.table(numeros)
+            console.table(cars)
+            document.write("<br>")
+            document.write(numeros.length)
+            document.write("<br>")
+            document.write(cars.length)
+            document.write("<br>")
+            document.write("<br>")
+
+            var novaMarca = prompt("Diga uma marca de carro")
+            cars[6] = novaMarca
+            document.write(cars)
+        }
+        function arranjos(){
+            var numeros=[9, 21, 7, 15]
+            var cars=["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi", "abobrinha"];
+            document.write(numeros)
+            document.write("<br>")
+            document.write(cars)
+
+            console.table(numeros)
+            console.table(cars)
+            document.write("<br>")
+            document.write(numeros.length)
+            document.write("<br>")
+            document.write(cars.length)
+            document.write("<br>")
+            document.write("<br>")
+
+            var novaMarca = prompt("Diga uma marca de carro")
+            cars.push(novaMarca)
+            document.write(cars)
+            console.table(cars)
+        }
+    </script>
+    <title>O Pete e o Repete</title>
+</head>
+<body>
+    <input type="button" value="Enviar" onclick="contar();">
+    <input type="button" value="Enviar" onclick="contarExtra();">
+    <input type="button" value="Enviar2" onclick="contar2()">
+    <input type="button" value="Enviar3" onclick="contar3();">
+    <input type="button" value="Enviar4" onclick="contar4();">
+    <input type="button" value="Enviar5" onclick="contar5();">
+    <input type="button" value="EnviarEnquanto" onclick="contarEnquanto();">
+    <input type="button" value="EnviarEnquanto2" onclick="contarEnquanto2();">
+    <input type="button" value="EnviarEnquanto3" onclick="contarEnquanto3();">
+    <input type="button" value="EnviarEnquanto4" onclick="contarEnquanto4();">
+    <input type="button" value="EnviarEnquanto5" onclick="contarEnquanto5();">
+    <input type="button" value="EnviarEnquanto6" onclick="contarEnquanto6();">
+    <input type="button" value="EnviarEnquanto7" onclick="contarEnquanto7();">
+    <input type="button" value="EnviarArranjos" onclick="arranjos()">
+    <input type="button" value="EnviarArranjos2" onclick="arranjos2()">
+</body>
+</html>
